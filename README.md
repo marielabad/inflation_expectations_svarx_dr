@@ -7,6 +7,8 @@ This repository contains the full workflow for my MSc dissertation at King's Col
 The repo includes scripts for data cleaning, estimation, robustness checks, tests, and the generation of figures used in the dissertation.
 
 ## Repository Structure
+
+```
 inflation_expectations_svarx_dr/
 ├─ data/
 │   └─ data_ce.xlsx
@@ -21,6 +23,7 @@ inflation_expectations_svarx_dr/
 ├─ .gitignore
 ├─ README.md
 └─ inflation_expectations_svarx_dr.Rproj
+```
 
 ## Reproducibility
 

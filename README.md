@@ -22,7 +22,6 @@ inflation_expectations_svarx_dr/
 ├─ README.md
 └─ inflation_expectations_svarx_dr.Rproj
 
-
 ## Reproducibility
 
 This project uses [`renv`](https://rstudio.github.io/renv/) to manage package versions.  
@@ -37,22 +36,32 @@ install.packages("renv")
 renv::restore()
 
 # 3. Run scripts in order
+source("scripts/01_packages.R")   
+source("scripts/02_utilities.R")    
 source("scripts/03_clean_build_data.R")
-source("scripts/04_estimate_svarx.R")
-source("scripts/05_figures_tables.R")
-source("scripts/06_robustness_check.R")
+source("scripts/04_estimate_svarx.R")  
+source("scripts/05_figures_tables.R") 
+source("scripts/06_robustness_check.R") 
 
 ```
 
 ## Data Sources
-## Variables
-The mayority of variables were obtained from the Central Bank of the Dominican Republic 
+# Central Bank of the Dominican Republic:
+Inflation (CPI)
+Interbank interest rate
+Economic activity index (IMAE)
+Inflation expectations (Macroeconomic Expectations Survey, 12-month average)
+EMBI
+
+# Exogenous variables
+International commodity price index (IMF)
 
 ## Outputs
 The outputs are impulse response functions (IRF), figures, and tables.
 
 ## Citation
 If you use this code or data preparation steps, please cite: 
+Mariel Abad Manzano [marielma16@gmail.com]
 
 @misc{Abad2025,
   author       = {Mariel Abad},
@@ -60,3 +69,6 @@ If you use this code or data preparation steps, please cite:
   year         = {2025},
   url          = {https://github.com/marielabad/inflation_expectations_svarx_dr}
 }
+
+This repository is intended only for academic and educational purposes as part of my MSc dissertation at King’s College London.
+Please feel free to contact me with any questions, comments, or requests for additional information.

@@ -27,18 +27,11 @@ inflation_expectations_svarx_dr/
 
 ## Reproducibility
 
-This project uses [`renv`](https://rstudio.github.io/renv/) to manage package versions.  
-
 To reproduce the analysis:  
 
 ```r
-# 1. Install renv if not installed
-install.packages("renv")
 
-# 2. Restore packages
-renv::restore()
-
-# 3. Run scripts in order
+# Run scripts in order
 source("scripts/01_packages.R")   
 source("scripts/02_utilities.R")    
 source("scripts/03_clean_build_data.R")

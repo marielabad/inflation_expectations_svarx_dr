@@ -19,7 +19,6 @@ inflation_expectations_svarx_dr/
 │   ├─ 04_estimate_svarx.R
 │   ├─ 05_figures_tables.R
 │   └─ 06_robustness_check.R
-├─ .DS_Store   👈 (macOS junk file)
 ├─ .gitignore
 ├─ README.md
 └─ inflation_expectations_svarx_dr.Rproj

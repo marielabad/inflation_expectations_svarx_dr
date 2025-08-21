@@ -14,7 +14,14 @@ data <- read_excel("data/data_ce.xlsx") |>
   mutate(periodo = as.Date(periodo))
 
 # Adjusting the data to use
-# Here we select the variables wi 
+adjusted_data <- data %>% 
+  mutate(
+    across(c(commodities_pi, imae, m1, ipc),
+           ~ (.x/lag(.x, 12) - 1),
+           .names = "{.col}")
+  ) %>% 
+  tidyr::drop_na()
+
 adjusted_long <- adjusted_data %>% 
   select(periodo,     
          exp_interanual, 

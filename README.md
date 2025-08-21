@@ -48,13 +48,17 @@ source("scripts/06_robustness_check.R")
 ## Data Sources
 ## Central Bank of the Dominican Republic:
 Inflation (CPI)
+
 Interbank interest rate
+
 Economic activity index (IMAE)
+
 Inflation expectations (Macroeconomic Expectations Survey, 12-month average)
+
 EMBI
 
-## Exogenous variables
-International commodity price index (IMF)
+## International Monetary Fund (IMF)
+International commodity price index
 
 ## Outputs
 The outputs are impulse response functions (IRF), figures, and tables.

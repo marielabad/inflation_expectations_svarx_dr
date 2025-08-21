@@ -1,4 +1,30 @@
-.Rproj.user
+
+# RStudio / R files
 .Rhistory
 .RData
 .Ruserdata
+.Rproj.user/
+
+# macOS Finder junk
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Data & outputs (don’t track heavy or derived files)
+data/*.rds
+data/*.csv
+data/*.RData
+data/*.RDS
+data/*.sav
+outputs/
+figures/
+tables/
+
+# renv library (keep renv.lock but ignore installed pkgs)
+renv/library/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.bak

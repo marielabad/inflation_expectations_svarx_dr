@@ -37,5 +37,5 @@ If you use this code or data preparation steps, please cite:
   author       = {Mariel Abad},
   title        = {inflation_expectations_svarx_dr: Code and Data for MSc Dissertation},
   year         = {2025},
-  url          = {https://github.com/marielabad/inflation_expectations_svarx_dr}
+  url          = {https://github.com/marielabad/inflation_expectations_svarx_dr.git}
 }
